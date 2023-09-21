@@ -1,9 +1,11 @@
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+import "../index.css";
 
 const SearchForm = () => {
   return (
-    <Form className=" bg-success text-white my-5 p-4 rounded-lg">
+    <Form className="form text-white my-5 p-4 rounded-lg">
       <h5>Restaurant</h5>
       <Form.Group className="my-2">
         <Form.Control
@@ -12,7 +14,6 @@ const SearchForm = () => {
           className="form-control-lg"
         />
       </Form.Group>
-
       <Form.Group className="my-2">
         <Form.Label>lorem ipsum</Form.Label>
         <Form.Control
@@ -27,8 +28,7 @@ const SearchForm = () => {
           <option value="10">10 km</option>
         </Form.Control>
       </Form.Group>
-
-      <Button className="m-2 text-white" variant="danger">
+      <Button className="m-2 text-white" variant="warning">
         asiento bb
       </Button>
       <Button className="m-2 text-white" variant="warning">
@@ -39,9 +39,11 @@ const SearchForm = () => {
       </Button>
       <hr />
       <div className="text-center">
-        <Button className="m-2 " variant="danger">
-          Lorem ipsum lorem ipsum
-        </Button>
+        <Link to="/map">
+          <Button className="m-2 " variant="danger">
+            Show places
+          </Button>
+        </Link>
       </div>
     </Form>
   );
