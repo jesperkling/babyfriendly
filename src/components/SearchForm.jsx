@@ -40,7 +40,7 @@ const SearchForm = () => {
       <hr />
       <div className="text-center">
         <Link to="/map">
-          <Button className="m-2 " variant="danger">
+          <Button className="m-2 coloured-btn text-white" variant="warning">
             Show places
           </Button>
         </Link>
